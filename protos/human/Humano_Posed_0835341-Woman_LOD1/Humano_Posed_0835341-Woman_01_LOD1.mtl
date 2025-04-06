@@ -1,0 +1,30 @@
+# Blender MTL File: '0835341_FinalBlenderFile.blend'
+# Material Count: 2
+
+newmtl Humano_Posed_0835341-Woman_01_LOD1_4K
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Bump Maps\\Humano_Posed_0835341-Woman_Normal-LOD1_4K.jpg
+map_Kd Maps\\Humano_Posed_0835341-Woman_Color01_4K.jpg
+map_Ks Maps\\Humano_Posed_0835341-Woman_Specular_4K.jpg
+map_Ns Maps\\Humano_Posed_0835341-Woman_Roughness_4K.jpg
+
+newmtl Humano_Posed_0835341-Woman_Accessories-01_01_LOD1_1K
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd Maps\\Humano_Posed_0835341-Woman_Accessories-01_Color01_1K.jpg
+map_Ks Maps\\Humano_Posed_0835341-Woman_Accessories-01_Specular_1K.jpg
+map_Ns Maps\\Humano_Posed_0835341-Woman_Accessories-01_Roughness_1K.jpg
+map_d Maps\\Humano_Posed_0835341-Woman_Accessories-01_Alpha_1K.jpg

@@ -1,0 +1,11 @@
+#VRML_SIM R2025a utf8
+# Describe the functionality of your PROTO here.
+# template language: javascript
+# tags: nonDeterministic
+
+PROTO Artmodel [
+
+]
+{
+
+}
