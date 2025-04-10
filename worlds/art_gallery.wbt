@@ -4,19 +4,21 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/project
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/Floor.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Parquetry.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/apartment_structure/protos/Wall.proto"
-EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/paintings/protos/LandscapePainting.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/apartment_structure/protos/Ceiling.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/lights/protos/CeilingLight.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/lights/protos/CeilingSpotLight.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Roughcast.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/softbank/nao/protos/Nao.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/softbank/nao/protos/NaoJersey.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/plants/protos/BunchOfSunFlowers.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/living_room_furniture/protos/Sofa.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/living_room_furniture/protos/Armchair.proto"
 
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.0874055848644562 0.9096212736385447 0.4061396339668094 0.4646758094524213
-  position -2.05583729750839 -0.8193725063088766 1.5524272506429029
+  orientation -0.06861946971543614 -0.8895262442735945 0.4517017036988968 5.9449303304123005
+  position -9.191505346894118 0.7879161548155222 3.356978453210261
 }
 TexturedBackground {
   texture "morning_cloudy_empty"
@@ -26,245 +28,204 @@ TexturedBackground {
 }
 Floor {
   size 13 5
-  tileSize 19 3.1
+  tileSize 5 6.2
   appearance Parquetry {
-    type "dark strip"
+    type "light strip"
     colorOverride 0.705882 0.705882 0.705882
+    IBLStrength 2
   }
 }
-Nao {
-  hidden position_0_0 -1.0778739570988679e-10
-  hidden position2_0_0 -5.599898904776749e-08
-  hidden position_0_1 1.398275122119102
-  hidden position2_0_1 -8.502871757945378e-07
-  hidden position_0_2 1.4979700525106565
-  hidden position2_0_2 -2.2783444609937584e-07
-  hidden position_0_3 5.089577749885991e-07
-  hidden position_0_4 -5.170397673210211e-07
-  hidden linearVelocity_0 0.00015482724965533881 9.139063440334942e-05 1.4456109110500564e-05
-  hidden angularVelocity_0 -0.00025859200268103864 0.0004116688634547545 -7.464935147528373e-07
-  hidden translation_12 0 0 0.1265
-  hidden rotation_12 -5.389359802004848e-11 -0.9999981475590117 -0.0019248061058415495 5.960464477539063e-08
-  hidden linearVelocity_12 0.00020691789049662258 0.00012405786019229452 1.4875739629435449e-05
-  hidden angularVelocity_12 -0.00025859013494092655 0.00041166996354016197 -7.465027262762915e-07
-  hidden translation_19 0 -0.098 0.1
-  hidden rotation_19 -4.251435878972017e-07 0.9999999999997817 -5.056326420056273e-07 1.398275122119317
-  hidden position_19_0 2.6078058757381733e-07
-  hidden linearVelocity_19 7.256945905244164e-05 0.0007296334541265631 0.00010773746931734608
-  hidden angularVelocity_19 0.024794857576947757 0.004390783367326776 -4.305711100630006e-05
-  hidden translation_20 0.105 -0.015 0
-  hidden rotation_20 1 0 0 2.615143176136055e-07
-  hidden position_20_0 2.487144306687296e-07
-  hidden linearVelocity_20 -0.00035769958364468527 0.0032682913916712098 0.0007963494808724093
-  hidden angularVelocity_20 0.024794636307909873 0.0043905680441915125 -4.4050722594201393e-05
-  hidden translation_21 0 0 0
-  hidden rotation_21 0 0 1 2.493441183966625e-07
-  hidden position_21_0 -2.4599646486676552e-08
-  hidden linearVelocity_21 -0.000725506886046756 0.00543880201765016 0.001255327947649562
-  hidden angularVelocity_21 0.02479454297200733 0.00438947158388427 -4.385921126001061e-05
-  hidden translation_22 0.05595 0 0
-  hidden rotation_22 -1 0 0 2.9802322387695313e-08
-  hidden position_22_0 8.02242266998287e-10
-  hidden position_22_1 8.049863130730232e-10
-  hidden position_22_2 1.4312836666836126e-10
-  hidden linearVelocity_22 -0.00117663911971256 0.008101297905390313 0.001761963097120631
-  hidden angularVelocity_22 0.02479443235042685 0.0043895320534849385 -4.342913599375976e-05
-  hidden translation_23 0.069 -0.013 -0.005
-  hidden rotation_23 0 1 0 0.9599999986920509
-  hidden position_23_0 3.824550879790367e-10
-  hidden linearVelocity_23 -0.001421673305361017 0.009536659197760092 0.0026608355131409397
-  hidden angularVelocity_23 0.024794432328340367 0.004389532049968581 -4.342913608737144e-05
-  hidden translation_24 0.014 0 0
-  hidden rotation_24 0 0.9999999999999999 0 0.9599999990715128
-  hidden position_24_0 4.114104088656561e-11
-  hidden linearVelocity_24 -0.0014220470125456668 0.009527473752988607 0.003189136101469909
-  hidden angularVelocity_24 0.024794432349680713 0.004389532053359364 -4.3429136119036324e-05
-  hidden translation_25 0.014 0 0
-  hidden rotation_25 0 1 0 0.9599999999030948
-  hidden linearVelocity_25 -0.0013502275865384188 0.009095379826067796 0.0034849994147957038
-  hidden angularVelocity_25 0.02479443236058877 0.004389532055123713 -4.342913613629807e-05
-  hidden translation_26 0.069 0.013 -0.005
-  hidden rotation_26 0 1 0 0.9599999986866038
-  hidden position_26_0 3.8589261761839134e-10
-  hidden linearVelocity_26 -0.0014222666408155783 0.009536063431897113 0.0026500541793829328
-  hidden angularVelocity_26 0.024794432328405558 0.004389532049994052 -4.3429136066159235e-05
-  hidden translation_27 0.014 0 0
-  hidden rotation_27 0 1 0 0.9599999990612049
-  hidden position_27_0 4.164883251665459e-11
-  hidden linearVelocity_27 -0.0014226403478549022 0.009526877986623902 0.003178354768386482
-  hidden angularVelocity_27 0.024794432349324172 0.004389532053302209 -4.342913612302714e-05
-  hidden translation_28 0.014 0 0
-  hidden rotation_28 0 1 0 0.9599999999015811
-  hidden linearVelocity_28 -0.0013508209217751733 0.009094784059457604 0.0034742180820516544
-  hidden angularVelocity_28 0.024794432360351892 0.004389532055095197 -4.342913612454327e-05
-  hidden translation_29 0.049 0 -0.026
-  hidden rotation_29 0 1 0 0
-  hidden position_29_0 9.347385215601966e-11
-  hidden linearVelocity_29 -0.001278628465865472 0.0086758456413429 0.003158691337819701
-  hidden angularVelocity_29 0.024794432304720018 0.004389532046159392 -4.342913595280187e-05
-  hidden translation_30 0.014 0 0
-  hidden rotation_30 0 -1 0 0.9599999997733362
-  hidden linearVelocity_30 -0.0013647207137173877 0.009188245952821713 0.0030618834792303113
-  hidden angularVelocity_30 0.02479443229838154 0.004389532045130231 -4.342913594103203e-05
-  hidden translation_31 0 0.098 0.1
-  hidden rotation_31 -1.1391722304968681e-07 0.9999999999999862 -1.225308463460555e-07 1.49797005251067
-  hidden position_31_0 -1.197675637318825e-07
-  hidden linearVelocity_31 0.00017209487576437735 0.00010213745076194669 -2.5205679583115327e-05
-  hidden angularVelocity_31 -0.0002585931231269739 0.00041166818877210604 -7.464024807351169e-07
-  hidden translation_32 0.105 0.015 0
-  hidden rotation_32 -1 0 0 1.1920928955078128e-07
-  hidden position_32_0 -1.1743766700367724e-09
-  hidden linearVelocity_32 0.00014627476565691103 8.588833749806484e-05 -3.422137293965407e-05
-  hidden angularVelocity_32 -0.00025859624799194896 0.00041169045304350954 -4.4867221883803434e-07
-  hidden translation_33 0 0 0
-  hidden rotation_33 0 0 1 0
-  hidden position_33_0 8.653639794949196e-09
-  hidden linearVelocity_33 0.00012455561480783663 7.223309668158667e-05 -3.449679494570959e-05
-  hidden angularVelocity_33 -0.0002585452872717631 0.0004113725620322639 -4.24056042680338e-07
-  hidden translation_34 0.05595 0 0
-  hidden rotation_34 1 0 0 0
-  hidden position_34_0 1.0758867443053459e-09
-  hidden position_34_1 1.0759529060074131e-09
-  hidden position_34_2 1.5161978334929164e-10
-  hidden linearVelocity_34 9.807680224184784e-05 5.5591168628443616e-05 -3.1417872221452684e-05
-  hidden angularVelocity_34 -0.0002585432993514209 0.0004113601960447136 -5.865804271597494e-07
-  hidden translation_35 0.069 -0.013 -0.005
-  hidden position_35_0 4.811381974984313e-10
-  hidden linearVelocity_35 8.20503493299202e-05 4.551822491344912e-05 -2.788597541586347e-05
-  hidden angularVelocity_35 -0.00025854329902691106 0.0004113601960247946 -5.865806658360665e-07
-  hidden translation_36 0.014 0 0
-  hidden rotation_36 0 0.9999999999999999 0 0.9599999987626362
-  hidden position_36_0 4.508320385326168e-11
-  hidden linearVelocity_36 8.063595804117637e-05 4.4619921440165096e-05 -3.0162241968067294e-05
-  hidden angularVelocity_36 -0.0002585432997256918 0.0004113601959541437 -5.865807795552677e-07
-  hidden translation_37 0.014 0 0
-  hidden rotation_37 0 0.9999999999999999 0 0.9599999998840557
-  hidden linearVelocity_37 8.385783531183592e-05 4.663733016376114e-05 -3.201476866458428e-05
-  hidden angularVelocity_37 -0.00025854329975829996 0.00041136019599799826 -5.865807919207493e-07
-  hidden translation_38 0.069 0.013 -0.005
-  hidden position_38_0 4.812132409726739e-10
-  hidden linearVelocity_38 8.204561365231088e-05 4.549877205656825e-05 -3.950684202170595e-05
-  hidden angularVelocity_38 -0.0002585432995026891 0.0004113601960111296 -5.865807149789394e-07
-  hidden translation_39 0.014 0 0
-  hidden rotation_39 0 1 0 0.9599999987624539
-  hidden position_39_0 4.503198143407024e-11
-  hidden linearVelocity_39 8.063122236380834e-05 4.4600468577487785e-05 -4.178310915408742e-05
-  hidden angularVelocity_39 -0.0002585432997029304 0.0004113601960443334 -5.865808119067458e-07
-  hidden translation_40 0.014 0 0
-  hidden rotation_40 0 1 0 0.9599999998841956
-  hidden linearVelocity_40 8.38530996347871e-05 4.661787729851529e-05 -4.363563614008359e-05
-  hidden angularVelocity_40 -0.00025854329970899045 0.00041136019605464934 -5.865808210204069e-07
-  hidden translation_41 0.049 0 -0.026
-  hidden position_41_0 1.1686858898776043e-10
-  hidden linearVelocity_41 8.870858996968472e-05 4.968121554213805e-05 -3.701736921476429e-05
-  hidden angularVelocity_41 -0.00025854329938964716 0.00041136019591729984 -5.865803879128268e-07
-  hidden translation_42 0.014 0 0
-  hidden rotation_42 0 -1 0 0.9599999996994648
-  hidden linearVelocity_42 8.416623861055764e-05 4.6830800289816394e-05 -3.59091386717741e-05
-  hidden angularVelocity_42 -0.0002585432993781353 0.0004113601958962522 -5.865803666244646e-07
-  hidden translation_43 0 -0.05 -0.085
-  hidden rotation_43 0 0.7071067811865476 0.7071067811865476 5.092623081992598e-07
-  hidden position_43_0 -1.0313528488562847e-06
-  hidden linearVelocity_43 0.00011279036368824538 6.571405416346029e-05 2.9893949856305857e-05
-  hidden angularVelocity_43 -0.00025694529835268594 0.000411900943226618 5.709160047047618e-07
-  hidden translation_44 0 0 0
-  hidden rotation_44 -1 0 0 1.0315220534728153e-06
-  hidden position_44_0 1.2966377515330281e-06
-  hidden linearVelocity_44 9.957684187490561e-05 5.819256222389569e-05 3.2202715684523256e-05
-  hidden angularVelocity_44 -0.0002567239521813992 0.0004118668971402198 4.4068768764722697e-07
-  hidden translation_45 0 0 0
-  hidden rotation_45 0 1 0 1.2966579149846716e-06
-  hidden position_45_0 -3.861040642693948e-07
-  hidden linearVelocity_45 7.946001867072084e-05 4.650312613736549e-05 3.490697029097607e-05
-  hidden angularVelocity_45 -0.0002548483022843987 0.00041213043720868687 3.094003775596456e-07
-  hidden translation_46 0 0 -0.1
-  hidden rotation_46 0 -0.9999999999999999 0 3.8628224721001805e-07
-  hidden position_46_0 5.111212946804733e-07
-  hidden linearVelocity_46 3.9946168563537606e-05 2.2675629549519217e-05 3.42563875587105e-05
-  hidden angularVelocity_46 -0.0002574512211815397 0.00041167550457289173 1.8083348001122778e-07
-  hidden translation_47 0 0 -0.1029
-  hidden rotation_47 0 1 0 5.110033809984414e-07
-  hidden position_47_0 -1.098359155175635e-06
-  hidden linearVelocity_47 2.0589560336188255e-05 1.130569840454158e-05 3.126722972482389e-05
-  hidden angularVelocity_47 -0.0002552477603420817 0.00041198285917281734 4.9404653574877605e-08
-  hidden translation_48 0 0 0
-  hidden rotation_48 -1 0 0 1.0982469184809035e-06
-  hidden linearVelocity_48 4.3191314286036625e-06 1.998070488932026e-06 3.5933259346370046e-05
-  hidden angularVelocity_48 -0.00025518310225085955 0.0004121649805251291 -8.151410922960546e-08
-  hidden translation_49 0.019725016517354754 -0.007090192896205938 -0.037569326889230995
-  hidden rotation_49 4.2250843716437926e-05 -4.351495843257382e-06 0.9999999990979653 -3.1415820325354757
-  hidden linearVelocity_49 2.029898145817052e-06 1.3312533739073269e-06 3.516377324821576e-05
-  hidden angularVelocity_49 -0.00025513510489713495 0.0004121367311791197 -2.0666044919575362e-07
-  hidden translation_53 0 0.05 -0.085
-  hidden rotation_53 0 -0.7071067811865475 0.7071067811865475 5.170509687929607e-07
-  hidden position_53_0 1.186107811236143e-06
-  hidden linearVelocity_53 0.00011278016395270993 6.580943111688693e-05 -3.2777861524367835e-06
-  hidden angularVelocity_53 -0.0002565619907447639 0.0004119588973041828 -2.5988984717115177e-06
-  hidden translation_54 0 0 0
-  hidden rotation_54 1 0 0 1.1861174548943454e-06
-  hidden position_54_0 5.634834944662144e-07
-  hidden linearVelocity_54 9.956210461063302e-05 5.8443415512568095e-05 -9.601841109903572e-06
-  hidden angularVelocity_54 -0.00025629219597114077 0.000411691355718355 -2.622091142657502e-06
-  hidden translation_55 0 0 0
-  hidden rotation_55 0 1 0 5.630983003285898e-07
-  hidden position_55_0 4.780213616179133e-07
-  hidden linearVelocity_55 7.941912756614898e-05 4.667213896556868e-05 -7.025178158896301e-06
-  hidden angularVelocity_55 -0.00025917812331721125 0.0004112034107899089 -2.6443532040903552e-06
-  hidden translation_56 0 0 -0.1
-  hidden rotation_56 0 1 0 4.777675730550717e-07
-  hidden position_56_0 5.304283036371972e-07
-  hidden linearVelocity_56 3.996454936575986e-05 2.2569881131695158e-05 -6.1042149925396245e-06
-  hidden angularVelocity_56 -0.00026229191428328065 0.00041067554287880576 -2.6664914218502185e-06
-  hidden translation_57 0 0 -0.1029
-  hidden rotation_57 0 1 0 5.306152646173509e-07
-  hidden position_57_0 1.3926724236526855e-06
-  hidden linearVelocity_57 2.064369033247839e-05 1.1141492546374091e-05 -5.770578552599905e-06
-  hidden angularVelocity_57 -0.00025922252470254837 0.00041112999536046255 -2.6923522564662072e-06
-  hidden translation_58 0 0 0
-  hidden rotation_58 1 0 0 1.3927604491172027e-06
-  hidden linearVelocity_58 4.327617515806201e-06 1.8256029580802742e-06 -2.1020999093212056e-06
-  hidden angularVelocity_58 -0.00025913268931978113 0.000411006159509455 -2.7160558488223276e-06
-  hidden translation_59 0.019724462347853855 0.0069247296882205545 -0.03744996169125714
-  hidden rotation_59 4.7598869780368755e-05 -2.5679765643797303e-06 0.9999999988638767 -3.1415716315476954
-  hidden linearVelocity_59 2.0851949778313216e-06 1.3267954243068575e-06 -4.6182612788673954e-06
-  hidden angularVelocity_59 -0.0002590830050226965 0.0004109784456338529 -2.74445243666443e-06
-  translation 0.47893520750806473 0.5747874735185257 0.32911426985667935
-  rotation -0.002090350621174295 -0.0017287984981153373 -0.9999963208382487 1.4125835555483361
-  controller "nao_demo_python"
-  cameraWidth 170
-  cameraFocus Focus {
-    focalDistance 3
-  }
-  jersey NaoJersey {
-    jerseyColor 0.333333 0 0
-  }
-  bodySlot [
-    Display {
-      name "chest_display"
-      width 200
+Solid {
+  translation 6.31 0.02 1.22999
+  rotation 0 1 0 -1.5707953071795862
+  children [
+    Shape {
+      appearance Appearance {
+        texture ImageTexture {
+          url [
+            "../data/R.jpg"
+          ]
+        }
+      }
+      geometry Plane {
+        size 2.2 4.5
+      }
     }
   ]
+  name "moon"
 }
 Wall {
   translation 2.83 -0.02 0
   name "wall(1)"
   size 0.1 2.7 1.6
   appearance Roughcast {
-    colorOverride 0.839216 1 0.305882
+    colorOverride 1 1 0.498039
     textureTransform TextureTransform {
       scale 2.4 1
     }
   }
 }
 Wall {
-  translation 6.44 -0.02 0
+  translation 6.44 0.05 0
   name "wall(3)"
   size 0.2 5 2.4
+}
+Solid {
+  translation -0.554688 2.42 1.36386
+  rotation -0.9999999999945224 2.761769999984872e-06 -1.8242099999900077e-06 -1.5707953071795862
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          emissiveColor 0.403922 0.403922 0.403922
+        }
+        texture ImageTexture {
+          url [
+            "../data/stablediffusion.jpg"
+          ]
+        }
+      }
+      geometry Plane {
+      }
+    }
+  ]
+  name "diffusion"
+}
+Solid {
+  translation -1.94469 2.42 1.86386
+  rotation -0.9999999999945224 2.761769999984872e-06 -1.8242099999900077e-06 -1.5707953071795862
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          emissiveColor 0.34902 0.34902 0.34902
+        }
+        texture ImageTexture {
+          url [
+            "../controllers/test/styles/picasso.jpg"
+          ]
+        }
+      }
+      geometry Plane {
+      }
+    }
+  ]
+  name "diffusion(1)"
+}
+Solid {
+  translation -1.94469 2.42 0.67386
+  rotation -0.9999999999945224 2.761769999984872e-06 -1.8242099999900077e-06 -1.5707953071795862
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          emissiveColor 0.741176 0.741176 0.741176
+        }
+        texture ImageTexture {
+          url [
+            "../data/genious2.jpg"
+          ]
+        }
+      }
+      geometry Plane {
+      }
+    }
+  ]
+  name "diffusion(7)"
+}
+Solid {
+  translation -3.31469 2.42 1.36386
+  rotation -0.9999999999945224 2.761769999984872e-06 -1.8242099999900077e-06 -1.5707953071795862
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          emissiveColor 0.317647 0.317647 0.317647
+        }
+        texture ImageTexture {
+          url [
+            "../data/R.png"
+          ]
+        }
+      }
+      geometry Plane {
+      }
+    }
+  ]
+  name "diffusion(2)"
 }
 Wall {
   translation 0.029997 2.53 0
   rotation 0 0 1 -1.5707953071795862
   size 0.1 13 2.4
+}
+Solid {
+  translation 4.50123 2.45 1.25778
+  rotation -1.3920495692317063e-07 -0.7071067811865408 0.7071067811865408 3.14159
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          specularColor 0.247059 0.247059 0.247059
+        }
+        texture ImageTexture {
+          url [
+            "../data/249511-moon-artwork-night-painting-watercolor.jpg"
+          ]
+        }
+      }
+      geometry Plane {
+        size 3 1.5
+      }
+    }
+  ]
+  name "moon_state"
+}
+Solid {
+  translation 4.40706 -2.33758 1.25778
+  rotation 8.363413325771771e-07 0.7071062811859247 0.7071072811863223 3.14159
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          emissiveColor 0.376471 0.376471 0.376471
+          specularColor 0.247059 0.247059 0.247059
+        }
+        texture ImageTexture {
+          url [
+            "../data/OIP (2).jpg"
+          ]
+        }
+      }
+      geometry Plane {
+        size 4 2.1
+      }
+    }
+  ]
+  name "moon_state(1)"
+}
+Solid {
+  translation 0.15706 -2.33758 1.25778
+  rotation 8.363413325771771e-07 0.7071062811859247 0.7071072811863223 3.14159
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          emissiveColor 0.866667 0.866667 0.866667
+          specularColor 0.247059 0.247059 0.247059
+        }
+        texture ImageTexture {
+          url [
+            "../data/diamond-painting-sailboat-at-daybreak-ships-global-figuredart-free-shipping_152_1024x1024@2x.jpg"
+          ]
+        }
+      }
+      geometry Plane {
+        size 4 2.1
+      }
+    }
+  ]
+  name "moon_state(2)"
 }
 Wall {
   translation 0.0299981 -2.44 0
@@ -272,12 +233,93 @@ Wall {
   name "wall(4)"
   size 0.1 13 2.4
 }
-LandscapePainting {
-  translation 2.78996 -0.0300002 0.75
-  rotation 0 0 1 3.14159
-  textureUrl [
-    "16-landscape-sage.jpg"
+Solid {
+  translation -2.49469 -2.38 1.31387
+  rotation -1.2865205115935673e-06 0.7071072811859844 0.7071062811855867 3.14159
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          emissiveColor 0.678431 0.678431 0.678431
+        }
+        texture ImageTexture {
+          url [
+            "../data/1200x1400_original_art_2020_11_5fc2708b5d8df.jpeg"
+          ]
+        }
+      }
+      geometry Plane {
+        size 1 1.3
+      }
+    }
   ]
+  name "diffusion(6)"
+}
+Solid {
+  translation -3.63469 -2.38 1.31387
+  rotation -1.2865205115935673e-06 0.7071072811859844 0.7071062811855867 3.14159
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          emissiveColor 0.678431 0.678431 0.678431
+        }
+        texture ImageTexture {
+          url [
+            "../data/911969414_124d2d26ab_b.jpg"
+          ]
+        }
+      }
+      geometry Plane {
+        size 1 1.3
+      }
+    }
+  ]
+  name "diffusion(3)"
+}
+Solid {
+  translation -4.74469 -2.38 1.31387
+  rotation -1.2865205115935673e-06 0.7071072811859844 0.7071062811855867 3.14159
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          emissiveColor 0.678431 0.678431 0.678431
+        }
+        texture ImageTexture {
+          url [
+            "../data/OIP (1).jpg"
+          ]
+        }
+      }
+      geometry Plane {
+        size 1 1.3
+      }
+    }
+  ]
+  name "diffusion(4)"
+}
+Solid {
+  translation -5.88469 -2.38 1.31387
+  rotation -1.2865205115935673e-06 0.7071072811859844 0.7071062811855867 3.14159
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          emissiveColor 0.678431 0.678431 0.678431
+        }
+        texture ImageTexture {
+          url [
+            "../data/e1a9a2f8db97c1079cca0cb2dc847c4d.jpg"
+          ]
+        }
+      }
+      geometry Plane {
+        size 1 1.3
+      }
+    }
+  ]
+  name "diffusion(5)"
 }
 CeilingSpotLight {
   translation 1.83252 1.0478 0.0668218
@@ -312,8 +354,8 @@ CeilingLight {
   pointLightCastShadows TRUE
 }
 Transform {
-  translation 0.51 -0.33 3.3647e-07
-  rotation 0.3779641520510403 -0.6546542633605892 -0.6546532633601869 2.41886
+  translation -3.81726 1.56454 -2.86343e-05
+  rotation 0.09269121546226601 0.7040631174481439 0.704062117447977 2.95673
   scale 0.5 0.5 0.6
   children [
     Shape {
@@ -328,6 +370,286 @@ Transform {
       geometry Mesh {
         url [
           "../protos/human/Humano_Posed_0835341-Woman_LOD0/Humano_Posed_0835341-Woman_02_LOD0.obj"
+        ]
+      }
+    }
+  ]
+}
+Nao {
+  hidden position_0_0 -2.0503854522466476e-14
+  hidden position2_0_0 -7.654653146570209e-09
+  hidden position_0_1 1.4000001052792188
+  hidden position2_0_1 3.305836719269261e-08
+  hidden position_0_2 1.4979700523388826
+  hidden position2_0_2 -3.3468945304672106e-08
+  hidden position_0_3 -2.6929395158248326e-07
+  hidden position_0_4 2.7786309009912727e-07
+  hidden rotation_12 -1.008282956718044e-14 -0.9999999999996876 -7.902430594485079e-07 4.2146848510894035e-08
+  hidden rotation_19 1.6533361771789547e-08 0.9999999999999997 1.9629107483813597e-08 1.4000006507512806
+  hidden position_19_0 -5.633147169656061e-08
+  hidden rotation_20 0.9999999999999999 0 0 2.210199382035633e-07
+  hidden position_20_0 -6.101960270399331e-08
+  hidden rotation_21 0 0 1 2.40274004587488e-07
+  hidden position_21_0 -2.65443462765802e-08
+  hidden rotation_22 -1 0 0 1.3328003749250115e-07
+  hidden position_22_0 1.495789631275316e-10
+  hidden position_22_1 1.4955892080420766e-10
+  hidden position_22_2 2.8778158950657856e-11
+  hidden rotation_23 0 1 0 0.9599999997008419
+  hidden position_23_0 7.184454585611339e-11
+  hidden rotation_24 0 1 0 0.9599999998563109
+  hidden position_24_0 8.185093192700903e-12
+  hidden rotation_26 0 0.9999999999999999 0 0.9599999997008823
+  hidden position_26_0 7.183398852841223e-11
+  hidden rotation_27 0 1 0 0.9599999998563321
+  hidden position_27_0 8.188449922826855e-12
+  hidden position_29_0 1.7576082130332812e-11
+  hidden rotation_30 0 -0.9999999999999999 0 0.9599999999648484
+  hidden rotation_31 -1.673863931342265e-08 0.9999999999999997 -1.8004307909064722e-08 1.4979705961802325
+  hidden position_31_0 2.982138274024677e-08
+  hidden rotation_32 -1 0 0 2.4575624618635555e-07
+  hidden position_32_0 -3.285997037209473e-08
+  hidden rotation_33 0 0 -1 3.305237444165179e-07
+  hidden position_33_0 1.641785174355314e-08
+  hidden rotation_34 1 0 0 1.1920928955078128e-07
+  hidden position_34_0 1.536257470543167e-10
+  hidden position_34_1 1.5365980355659188e-10
+  hidden position_34_2 2.1609436464237768e-11
+  hidden rotation_35 0 1 0 0.9599999996927483
+  hidden position_35_0 6.87119741192359e-11
+  hidden rotation_36 0 1 0 0.9599999998625763
+  hidden position_36_0 6.4274536629468445e-12
+  hidden rotation_38 0 1 0 0.959999999692681
+  hidden position_38_0 6.870279494652448e-11
+  hidden rotation_39 0 1 0 0.9599999998625947
+  hidden position_39_0 6.423692616112394e-12
+  hidden position_41_0 1.6683987526811924e-11
+  hidden rotation_42 0 -1 0 0.9599999999666323
+  hidden rotation_43 0 -0.7071067811865475 -0.7071067811865475 9.1953567388902e-07
+  hidden position_43_0 -1.5741460541466517e-07
+  hidden rotation_44 1 0 0 6.873942968053134e-07
+  hidden position_44_0 -2.6178583626179877e-07
+  hidden rotation_45 0 -1 0 2.615143176136055e-07
+  hidden position_45_0 2.711548957086573e-07
+  hidden rotation_46 0 1 0 2.715120786173435e-07
+  hidden position_46_0 -2.8338317648035627e-07
+  hidden rotation_47 0 -1 0 2.8272965492323474e-07
+  hidden position_47_0 -1.7369537260385743e-07
+  hidden rotation_48 -1 0 0 1.7377590819732256e-07
+  hidden translation_49 0.020000140205000516 -0.006999996953848897 -0.040959587145129685
+  hidden rotation_49 3.69371048861077e-07 -6.121601706487663e-11 0.9999999999999318 -3.1415853081994083
+  hidden rotation_53 0 -0.7071067811865476 0.7071067811865476 3.71035921513699e-07
+  hidden position_53_0 1.5744001270204055e-07
+  hidden rotation_54 -0.9999999999999999 0 0 6.873942968053134e-07
+  hidden position_54_0 -2.563959284578998e-07
+  hidden rotation_55 0 -1 0 2.563692708922217e-07
+  hidden position_55_0 -2.788140411051433e-07
+  hidden rotation_56 0 -1 0 2.7957056521316965e-07
+  hidden position_56_0 -2.785409050076737e-07
+  hidden rotation_57 0 -1 0 2.7797755757238933e-07
+  hidden position_57_0 1.7369336824504685e-07
+  hidden rotation_58 1 0 0 1.7377590819732256e-07
+  hidden translation_59 0.020000136459171647 0.006999996952862908 -0.04095958707232479
+  hidden rotation_59 3.6938242344323566e-07 6.046373493071577e-11 0.9999999999999319 -3.1415853063729537
+  translation 0.5813375987107943 0.5436199176796296 0.3325262220521251
+  rotation -0.0017111806869057663 -0.001723804686898057 -0.9999970501746782 1.5634258551105462
+  controller "snapnao"
+  cameraWidth 255
+  cameraHeight 255
+  jersey NaoJersey {
+  }
+  bodySlot [
+    Display {
+      name "chest_display"
+      width 255
+      height 255
+    }
+  ]
+}
+Solid {
+  translation 1.47 2.45 1.34
+  rotation 1 0 0 1.5708
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.929412 0.929412 0.929412
+          emissiveColor 0.647059 0.647059 0.647059
+        }
+        texture ImageTexture {
+          url [
+            "../data/OIP.jpg"
+          ]
+          filtering 2
+        }
+      }
+      geometry Plane {
+        size 2 1.3
+      }
+    }
+  ]
+  name "vangogh"
+}
+Solid {
+  translation -4.99 2.45 1.34
+  rotation 1 0 0 1.5708
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+          emissiveColor 0.737255 0.737255 0.737255
+        }
+        texture ImageTexture {
+          url [
+            "../data/0XLr9usgV3EtkTZdX5Sa_shelbyrobinson2.jpg"
+          ]
+          filtering 2
+        }
+      }
+      geometry Plane {
+        size 2 1.3
+      }
+    }
+  ]
+  name "vangogh(2)"
+}
+Solid {
+  translation 2.75 -0.0599998 0.82
+  rotation -0.5773509358554485 0.5773489358556708 0.5773509358554485 -2.094395307179586
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.929412 0.929412 0.929412
+          emissiveColor 0.647059 0.647059 0.647059
+        }
+        texture ImageTexture {
+          url [
+            "../data/b196493079f6b27bf15f76e75b0a42ee.jpg"
+          ]
+          filtering 2
+        }
+      }
+      geometry Plane {
+        size 2.5 1.3
+      }
+    }
+  ]
+  name "vangogh(1)"
+}
+BunchOfSunFlowers {
+  translation 2.5 1.31 0
+}
+BunchOfSunFlowers {
+  translation 2.5 -1.37 0
+  name "bunch of sunflowers(1)"
+}
+Sofa {
+  translation 3.42 0 0
+}
+Armchair {
+  translation 4.71 1.08 0
+  rotation 0 0 1 -1.5707953071795862
+}
+Armchair {
+  translation 4.71 -1.2 0
+  rotation 0 0 1 1.5708
+  name "armchair(1)"
+}
+Transform {
+  translation -6.06158 -0.97 1.75608
+  rotation -4.064099999955249e-06 0.9999999999889888 2.3464099999741633e-06 -1.047195307179586
+  scale 0.5 0.5 0.5
+  children [
+    Shape {
+      appearance PBRAppearance {
+        metalness 0
+        IBLStrength 0.8
+        occlusionMapStrength 0
+        emissiveColor 0.372549 0.372549 0.372549
+        emissiveColorMap ImageTexture {
+          url [
+            "../protos/fairy/textures/internal_ground_ao_texture.jpeg"
+          ]
+        }
+      }
+      geometry Mesh {
+        url [
+          "../protos/fairy/source/fairy_shira02/fairy_shira02.obj"
+        ]
+      }
+    }
+  ]
+}
+Transform {
+  translation 4.86682 0.593751 0.0464865
+  rotation 0.9962078089268424 -0.07907018483429887 0.03630299303706772 1.71623
+  scale 0.8 0.8 0.8
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          emissiveColor 0.839216 0.839216 0.839216
+        }
+        texture ImageTexture {
+          url [
+            "../protos/humano_posed_0341842_man_objfbx_v002/Humano_Posed_0341842-Man_ObjFbx/Humano_Posed_0341842-Man_LOD2/Maps/Humano_Posed_0341842-Man_Color03_2K.jpg"
+          ]
+        }
+      }
+      geometry Mesh {
+        url [
+          "../protos/humano_posed_0341842_man_objfbx_v002/Humano_Posed_0341842-Man_ObjFbx/Humano_Posed_0341842-Man_LOD0/Humano_Posed_0341842-Man_01_LOD0.obj"
+        ]
+        materialIndex 0
+      }
+    }
+  ]
+}
+Transform {
+  translation -2.53524 -1.66144 -1.18395e-05
+  rotation -0.4769060285521263 0.6215130372096759 0.6215160372098555 -2.2515953071795867
+  scale 0.006 0.006 0.006
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          emissiveColor 0.686275 0.686275 0.686275
+        }
+        texture ImageTexture {
+          url [
+            "../protos/95-rp_mei_posed_001_c4d/tex/rp_mei_posed_001_dif_2k.jpg"
+          ]
+        }
+      }
+      geometry Mesh {
+        url [
+          "../protos/95-rp_mei_posed_001_c4d/rp_mei_posed_001_30k.obj"
+        ]
+      }
+    }
+  ]
+}
+Transform {
+  translation 0.476256 -0.170573 5.0822e-06
+  rotation -0.09269190944759506 0.7040600717611116 0.7040650717616214 -2.9567453071795864
+  scale 0.005 0.005 0.005
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          emissiveColor 0.443137 0.443137 0.443137
+        }
+        texture ImageTexture {
+          url [
+            "../protos/free-download-attractive-african-woman-236/textures/050F_05SET_03SHOT_Diffuse.jpg"
+          ]
+        }
+      }
+      geometry Mesh {
+        url [
+          "../protos/free-download-attractive-african-woman-236/source/050F_05SET_03SHOT/050F_05SET_03SHOT.obj"
         ]
       }
     }

@@ -1,0 +1,16 @@
+# Blender MTL File: '0341842_FinalBlenderFile.blend'
+# Material Count: 1
+
+newmtl Humano_Posed_0341842-Man_03_LOD1_4K
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Bump Maps\\Humano_Posed_0341842-Man_Normal-LOD1_4K.jpg
+map_Kd Maps\\Humano_Posed_0341842-Man_Color03_4K.jpg
+map_Ks Maps\\Humano_Posed_0341842-Man_Specular_4K.jpg
+map_Ns Maps\\Humano_Posed_0341842-Man_Roughness_4K.jpg
