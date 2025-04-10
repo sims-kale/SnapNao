@@ -5,6 +5,7 @@ import cv2
 import numpy as np
 import os
 import sys
+import random
 # from snap_filters import apply_sunglasses_filter  #Deleted
 
 
@@ -18,6 +19,19 @@ class Nao(Robot):
         '5': 'abstract.jpg'
     }
     CURRENT_STYLE = 'vangogh.jpg'
+    COMMENTS = [
+        "A beautiful transformation into artistic expression, Thank you!",
+        "This interpretation captures the essence of creativity, Thank you!",        
+        "An elegant blend of technology and artistry. It looks Beautiful, Thank you!",        
+        "The composition has wonderful balance and flow, Thank you!",        
+        "You've inspired a truly remarkable piece, Thank you!",
+        "Art meets AI. You're welcome, Thank you!",
+        "Now this belongs in a gallery!, Thank you!",
+        "What an interesting creative direction. Thank You!",
+        "This composition draws the eye beautifully. Thank You",
+        "A sophisticated interpretation of the original. Thank you",
+        
+        ]
 
     def __init__(self):
         Robot.__init__(self)
@@ -26,6 +40,13 @@ class Nao(Robot):
         
         # Initialize devices
         self.findAndEnableDevices()
+        # self.tts = self.getDevice("text_to_speech")
+        self.speaker = self.getDevice("speaker")
+        # self.speaker.speak("Testing sound.", 1.0)
+        # self.speaker.playSound(self.speaker, self.speaker, "sounds.wav", 1.0, 1.0, 0.0, False)
+        # sound_file = r"D:\SHU\Robotics\assesment\data\file_example_WAV_1MG.wav"
+        # self.speaker.loadSound(sound_file)  # Preload
+        # self.speaker.playSound(sound_file, 1.0, 1.0, 0.0, 0)
         self.loadMotionFiles()
         self.startMotion(self.standInit)
         
@@ -36,7 +57,7 @@ class Nao(Robot):
         
         
         self.show_welcome_message()
-        self.print_style_menu()
+        # self.print_style_menu()
 
     # robot sensors and actuators
     def findAndEnableDevices(self):
@@ -68,21 +89,23 @@ class Nao(Robot):
     def show_welcome_message(self):
       
         self.startMotion(self.handWave)
+        self.speaker.speak("Welcome to the SnapNao", 1.0)
         self.clear_display()
         self.display.setColor(0xFFFFFF)  # White text
         self.display.setFont("Arial", 14, True)
         self.display.drawText("Welcome to the Art Gallery!", 10, 0)
+        self.display.drawText("Step into a masterpiece!\nPose, pick a style,\nand become part of art history!", 1, 30)
         self.display.setFont("Arial", 12, False)
-        self.display.drawText("\n'C' - capture photo", 1, 40)
-        self.display.drawText("\n'H' - Home Screen", 1, 60)
-        self.display.drawText("\n'Q' - Quite", 1, 80)
+        self.display.drawText("\n'C' - Capture photo", 1, 120)
+        self.display.drawText("\n'H' - Home Screen", 1, 130)
+        self.display.drawText("\n'Q' - Quite", 1, 150)
 
     def print_style_menu(self):
       
         style_text = f"Current Style: {self.CURRENT_STYLE.split('.')[0]}"
         self.display.setColor(0x00FF00)  # Green text
-        self.display.setFont("Arial", 10, True)
-        self.display.drawText(style_text, 1, 120)
+        self.display.setFont("Arial", 12, True)
+        self.display.drawText(style_text, 1, 80)
         self.display.setFont("Arial", 12, False)
         self.display.drawText("1: Van Gogh\n2: Picasso\n3: Monet\n4: Bauhaus\n5: Abstract" , 50, 140)   #\nS: Sunglasses
         # self.display.drawText("2: Picasso", 50, 1)
@@ -95,6 +118,7 @@ class Nao(Robot):
     # Capture and save a photo
     def capture_photo(self):
         
+        self.speaker.speak("Pose and Smile please.", 1.0)
         raw_img = self.cameraTop.getImageArray()
         img = np.array(raw_img, dtype=np.uint8)
         img = cv2.cvtColor(img, cv2.COLOR_BGRA2RGB)
@@ -103,7 +127,10 @@ class Nao(Robot):
         # print(f"Captured image saved to {img_path}")
         self.display.setColor(0x00FFFF)
         self.display.setFont("Arial", 14, True)
-        self.display.drawText("Image Captured!", 80, 100)
+        self.display.drawText("Image Captured!", 20, 20)
+        self.speaker.speak("Image Captured!", 1.0)
+        self.speaker.speak("Please Select the Style", 1.0)
+        self.print_style_menu()
         
 
     # Apply selected style to saved image
@@ -148,17 +175,17 @@ class Nao(Robot):
             self.clear_display()
             image_handle = self.display.imageLoad(styled_path)
             self.display.imagePaste(image_handle, 0, 0, False)
+            style_comment = random.choice(self.COMMENTS)
+            self.speaker.speak(style_comment, 1.0)
         else:
             self.display.setColor(0xFF0000)
             self.display.drawText("Failed to load styled image", 50, 150)
         
         
-    """Change style and apply it to the last captured image"""
+    #Change style and apply it to image
 
     def change_style(self, style_key):
-        self.display.setColor(0x00FFFF)
-        self.display.setFont("Arial", 14, True)
-        self.display.drawText("Processing...", 80, 100)
+        
 
         if style_key in self.STYLES:
             self.CURRENT_STYLE = self.STYLES[style_key]
@@ -186,8 +213,9 @@ class Nao(Robot):
             # return content_img
 
 
-    
-    """Main control loop"""
+
+
+
     def run(self):
     
         while self.step(self.timeStep) != -1:
@@ -198,7 +226,7 @@ class Nao(Robot):
                 self.capture_photo()
     
             elif key in [ord('1'), ord('2'), ord('3'), ord('4'), ord('5')]:
-                
+                # self.speaker.speak("Your styled image is on the way.", 1.0)               
                 self.change_style(chr(key))
     
             elif key == Keyboard.LEFT:
@@ -223,7 +251,7 @@ class Nao(Robot):
                 
             elif key == ord('H'):
                 self.show_welcome_message()
-                self.print_style_menu()
+                # self.print_style_menu()
             elif key == ord('Q'):
                 self.startMotion(self.handWave)
                 break
@@ -235,7 +263,7 @@ class Nao(Robot):
         self.currentlyPlaying = motion
 
 if __name__ == "__main__":
-    # Create styles directory if it doesn't exist
+   
     if not os.path.exists('styles'):
         os.makedirs('styles')
         print("Created 'styles' directory. Please add style images (e.g., vangogh.jpg)")
@@ -245,5 +273,3 @@ if __name__ == "__main__":
         robot.run()
     except Exception as e:
         print(f"Error: {e}")
-    # finally:
-    #     robot.cleanup()

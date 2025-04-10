@@ -10,15 +10,14 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/project
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Roughcast.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/softbank/nao/protos/Nao.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/softbank/nao/protos/NaoJersey.proto"
-EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/plants/protos/BunchOfSunFlowers.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/living_room_furniture/protos/Sofa.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/living_room_furniture/protos/Armchair.proto"
 
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.06861946971543614 -0.8895262442735945 0.4517017036988968 5.9449303304123005
-  position -9.191505346894118 0.7879161548155222 3.356978453210261
+  orientation -0.04001602335162203 -0.7976387256422244 0.6018065978626113 6.116915596889493
+  position -11.853731410881407 0.6255674561953624 2.0153646648241472
 }
 TexturedBackground {
   texture "morning_cloudy_empty"
@@ -376,93 +375,41 @@ Transform {
   ]
 }
 Nao {
-  hidden position_0_0 -2.0503854522466476e-14
-  hidden position2_0_0 -7.654653146570209e-09
-  hidden position_0_1 1.4000001052792188
-  hidden position2_0_1 3.305836719269261e-08
-  hidden position_0_2 1.4979700523388826
-  hidden position2_0_2 -3.3468945304672106e-08
-  hidden position_0_3 -2.6929395158248326e-07
-  hidden position_0_4 2.7786309009912727e-07
-  hidden rotation_12 -1.008282956718044e-14 -0.9999999999996876 -7.902430594485079e-07 4.2146848510894035e-08
-  hidden rotation_19 1.6533361771789547e-08 0.9999999999999997 1.9629107483813597e-08 1.4000006507512806
-  hidden position_19_0 -5.633147169656061e-08
-  hidden rotation_20 0.9999999999999999 0 0 2.210199382035633e-07
-  hidden position_20_0 -6.101960270399331e-08
-  hidden rotation_21 0 0 1 2.40274004587488e-07
-  hidden position_21_0 -2.65443462765802e-08
-  hidden rotation_22 -1 0 0 1.3328003749250115e-07
-  hidden position_22_0 1.495789631275316e-10
-  hidden position_22_1 1.4955892080420766e-10
-  hidden position_22_2 2.8778158950657856e-11
-  hidden rotation_23 0 1 0 0.9599999997008419
-  hidden position_23_0 7.184454585611339e-11
-  hidden rotation_24 0 1 0 0.9599999998563109
-  hidden position_24_0 8.185093192700903e-12
-  hidden rotation_26 0 0.9999999999999999 0 0.9599999997008823
-  hidden position_26_0 7.183398852841223e-11
-  hidden rotation_27 0 1 0 0.9599999998563321
-  hidden position_27_0 8.188449922826855e-12
-  hidden position_29_0 1.7576082130332812e-11
-  hidden rotation_30 0 -0.9999999999999999 0 0.9599999999648484
-  hidden rotation_31 -1.673863931342265e-08 0.9999999999999997 -1.8004307909064722e-08 1.4979705961802325
-  hidden position_31_0 2.982138274024677e-08
-  hidden rotation_32 -1 0 0 2.4575624618635555e-07
-  hidden position_32_0 -3.285997037209473e-08
-  hidden rotation_33 0 0 -1 3.305237444165179e-07
-  hidden position_33_0 1.641785174355314e-08
-  hidden rotation_34 1 0 0 1.1920928955078128e-07
-  hidden position_34_0 1.536257470543167e-10
-  hidden position_34_1 1.5365980355659188e-10
-  hidden position_34_2 2.1609436464237768e-11
-  hidden rotation_35 0 1 0 0.9599999996927483
-  hidden position_35_0 6.87119741192359e-11
-  hidden rotation_36 0 1 0 0.9599999998625763
-  hidden position_36_0 6.4274536629468445e-12
-  hidden rotation_38 0 1 0 0.959999999692681
-  hidden position_38_0 6.870279494652448e-11
-  hidden rotation_39 0 1 0 0.9599999998625947
-  hidden position_39_0 6.423692616112394e-12
-  hidden position_41_0 1.6683987526811924e-11
-  hidden rotation_42 0 -1 0 0.9599999999666323
-  hidden rotation_43 0 -0.7071067811865475 -0.7071067811865475 9.1953567388902e-07
-  hidden position_43_0 -1.5741460541466517e-07
-  hidden rotation_44 1 0 0 6.873942968053134e-07
-  hidden position_44_0 -2.6178583626179877e-07
-  hidden rotation_45 0 -1 0 2.615143176136055e-07
-  hidden position_45_0 2.711548957086573e-07
-  hidden rotation_46 0 1 0 2.715120786173435e-07
-  hidden position_46_0 -2.8338317648035627e-07
-  hidden rotation_47 0 -1 0 2.8272965492323474e-07
-  hidden position_47_0 -1.7369537260385743e-07
-  hidden rotation_48 -1 0 0 1.7377590819732256e-07
-  hidden translation_49 0.020000140205000516 -0.006999996953848897 -0.040959587145129685
-  hidden rotation_49 3.69371048861077e-07 -6.121601706487663e-11 0.9999999999999318 -3.1415853081994083
-  hidden rotation_53 0 -0.7071067811865476 0.7071067811865476 3.71035921513699e-07
-  hidden position_53_0 1.5744001270204055e-07
-  hidden rotation_54 -0.9999999999999999 0 0 6.873942968053134e-07
-  hidden position_54_0 -2.563959284578998e-07
-  hidden rotation_55 0 -1 0 2.563692708922217e-07
-  hidden position_55_0 -2.788140411051433e-07
-  hidden rotation_56 0 -1 0 2.7957056521316965e-07
-  hidden position_56_0 -2.785409050076737e-07
-  hidden rotation_57 0 -1 0 2.7797755757238933e-07
-  hidden position_57_0 1.7369336824504685e-07
-  hidden rotation_58 1 0 0 1.7377590819732256e-07
-  hidden translation_59 0.020000136459171647 0.006999996952862908 -0.04095958707232479
-  hidden rotation_59 3.6938242344323566e-07 6.046373493071577e-11 0.9999999999999319 -3.1415853063729537
-  translation 0.5813375987107943 0.5436199176796296 0.3325262220521251
-  rotation -0.0017111806869057663 -0.001723804686898057 -0.9999970501746782 1.5634258551105462
+  hidden rotation_13 1.1706166374340899e-14 -0.9999999999999994 -3.392391955933644e-08 4.2146848510894035e-08
+  hidden rotation_24 -1 0 0 8.940696716308595e-08
+  hidden rotation_25 0 1 0 0.9599999982050208
+  hidden rotation_26 0 1 0 0.9599999991378599
+  hidden rotation_27 0 1 0 0.9599999999017778
+  hidden rotation_28 0 1 0 0.9599999982051978
+  hidden rotation_29 0 1 0 0.9599999991379763
+  hidden rotation_30 0 0.9999999999999999 0 0.9599999999017595
+  hidden rotation_32 0 -0.9999999999999999 0 0.9599999997890992
+  hidden rotation_33 -5.02074930410245e-08 0.9999999999999974 -5.4003861667926246e-08 1.4979705937260277
+  hidden rotation_36 1 0 0 7.884953353001448e-08
+  hidden rotation_37 0 1 0 0.959999998156342
+  hidden rotation_38 0 1 0 0.9599999991757602
+  hidden rotation_40 0 1 0 0.9599999981564025
+  hidden rotation_41 0 1 0 0.959999999175741
+  hidden rotation_44 0 -1 0 0.959999999799749
+  hidden rotation_46 1 0 0 3.7223088731756253e-07
+  translation 0.5813376287916399 0.5436201811720855 0.3324857910012324
+  rotation -0.001711220055285827 -0.0017237846364633333 -0.9999970501418739 1.5634272094353603
   controller "snapnao"
   cameraWidth 255
   cameraHeight 255
   jersey NaoJersey {
   }
   bodySlot [
+    Speaker {
+    }
     Display {
       name "chest_display"
       width 255
       height 255
+    }
+  ]
+  headSlot [
+    Speaker {
     }
   ]
 }
@@ -537,13 +484,6 @@ Solid {
     }
   ]
   name "vangogh(1)"
-}
-BunchOfSunFlowers {
-  translation 2.5 1.31 0
-}
-BunchOfSunFlowers {
-  translation 2.5 -1.37 0
-  name "bunch of sunflowers(1)"
 }
 Sofa {
   translation 3.42 0 0
